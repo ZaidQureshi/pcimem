@@ -105,7 +105,7 @@ int main(int argc, char **argv) {
 	if(argc < 3) {
 		// pcimem /sys/bus/pci/devices/0001\:00\:07.0/resource0 0x100 w 0x00
 		// argv[0]  [1]                                         [2]   [3] [4]
-		fprintf(stderr, "\nUsage:\t%s { sysfile } { offset } [ type*count [ data ] ]\n"
+		fprintf(stderr, "\nUsage:\t%s { sysfile } { offset } [ type*count ] [ gpu ]\n"
 			"\tsys file: sysfs file for the pci resource to act on\n"
 			"\toffset  : offset into pci memory region to act upon\n"
 			"\ttype    : access operation type : [b]yte, [h]alfword, [w]ord, [d]ouble-word\n"
