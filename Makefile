@@ -5,7 +5,7 @@ CC=nvcc
 all: pcimem
 
 pcimem: pcimem.o
-	$(CC) -L/usr/local/cuda/lib64 -O0 $^ -o $@ 
+	$(CC) -O0 $^ -o $@ 
 
 pcimem.o: pcimem.cu
 	$(CC) -c -O0  $<
